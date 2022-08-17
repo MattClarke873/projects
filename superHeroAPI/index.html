@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Super</title>
+    <link href="super.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+    <div class="card">
+      <div class="title">
+        <div id="Name"></div>
+        <div id="id"></div>
+      </div>
+
+      <div class="img" id="image"><img src="" alt="" /></div>
+
+      <div class="type">
+       
+      </div>
+      <div class="type">
+        <div class="desc">Intelligence:</div>
+        <div   class="meter animate" >
+          <span id="intelligence" style="width: 0%"><span id="intelligenceGold" ></span ></span>
+        </div>
+      </div>
+
+
+      <div class="type">
+        <div class="desc">Strength:</div>
+        <div  class="meter animate">
+          <span id="strength" style="width: 0%"><span id="strengthGold"></span></span>
+        </div>
+      </div>
+
+      <div class="type">
+        <div class="desc">Speed:</div>
+        <div  class="meter animate">
+          <span id="speed" style="width: 0%"><span id="speedGold"></span></span>
+        </div>
+      </div>
+
+      <div class="type">
+        <div class="desc">Power:</div>
+        <div  class="meter animate">
+          <span id="power" style="width: 0%"><span id="powerGold"></span></span>
+        </div>
+      </div>
+
+      <div class="type">
+        <div class="desc">Combat:</div>
+        <div  class="meter animate">
+          <span id="fightingSkills" style="width: 0%"><span id="CombatGold"></span></span>
+        </div>
+      </div>
+      <div class="biosBox">
+      <div class="bios">Real Name:</div>
+      <div id="realName"></div>
+    </div>
+  </div>
+
+
+
+    <button id="newSuperHero" class="newSuperHero" id="newSuperHero">New Super Hero</button>
+    <button id="newSearchButton" class="newSuperHero" id="newSuperHero">New Super Hero Search</button>
+    <input id="searchSuperHero" class= "newSuperHero" type="text/css" placeholder="Super Hero Name">
+
+   
+    <script src="super.js"></script>
+  </body>
+</html>
