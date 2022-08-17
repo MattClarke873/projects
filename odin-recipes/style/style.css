@@ -1,0 +1,109 @@
+
+
+
+.body {
+  background-image: url('../Images/kitchen.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.titlebody {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.title {
+  color: white;
+  font-family: roboto;
+  font-size: 70px;
+  justify-content: center;
+}
+
+.card {
+  display: inline;
+  display: grid;
+  grid-template-rows: 350px 70px;
+  margin-bottom: 5px;
+  width: 355px;
+  transition: opacity 0.15s;
+}
+
+.card:hover{
+  opacity: 0.8;
+}
+
+
+.icon {
+  width: 350px;
+}
+
+.cardDesc {
+  color: white;
+  font-family: roboto;
+  font-size: 40px;
+  text-align: center;
+  width: 350px;
+}
+
+.card-line {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 70px;
+  margin-left: 60px;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+/* Recipes page */
+    
+    .page-icon{
+      width: 250px;
+      height: auto;
+      border-radius: 50%;
+      opacity: .8;
+      margin-left: 40%;
+    }
+
+    .desc{
+      color: rgb(255, 255, 255);
+      font-family: roboto;
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .sub-title{
+      color: rgb(255, 255, 255);
+      font-family: roboto;
+      text-decoration:underline
+    }
+
+    .list-box{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-left: 60px;
+    }
+
+    .list{
+      color: white;
+      font-size: 20px;
+      font-family: roboto;
+    }
+
+    .homebutton{
+      font-family: roboto;
+      font-size: 50px;
+      margin-left: 42%;
+      border-top-left-radius: 75%; 
+      border-top-right-radius: 75%; 
+      margin-bottom: 0;
+      padding-left: 50px;
+      padding-right: 50px;
+      background-color: rgba(0, 0, 0, 0);
+      color: white;
+      border: none;
+     
+      }
+
+
+  
