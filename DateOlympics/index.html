@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date Olympics</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background-image: url("background.jpg");
+        background-repeat: no-repeat;
+        background-size: 370px 800px;
+      }
+      div {
+        /* border-color: blue;
+        border-width: 1px;
+        border-style: solid; */
+        flex-direction: column;
+      }
+      .mainBox {
+        width: 350px;
+        height: 740px;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+      }
+      .top {
+        flex: 3;
+      }
+
+      .result {
+        text-align: center;
+        margin-top: 50%;
+        color: rgb(255, 255, 255);
+        font-size: 50px;
+        -webkit-text-stroke:2px black;
+  
+        
+      }
+      .buttonsSection {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        flex: 2;
+      }
+
+      input {
+        width: 290px;
+        height: 28px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border-style: none;
+        text-align: center;
+      }
+
+      ::placeholder {
+        text-align: center;
+        font-size: 15px;
+      }
+
+      .tabGrid {
+        height: 50px;
+        color: black;
+      }
+
+      .TabLH {
+        width: 150px;
+        border-radius: 25px 0px 0px 25px;
+        height: 30px;
+        border: none;
+        outline: none;
+        float: left;
+        border-right-width: 1px;
+        border-right-color: rgba(113, 112, 112, 0.948);
+        border-right-style: solid;
+      }
+      .TabRH {
+        border-radius: 0px 25px 25px 0px;
+        width: 150px;
+        height: 30px;
+        border: none;
+        outline: none;
+        margin: 0px;
+        float: right;
+        border-left-width: 1px;
+        border-left-color: rgba(113, 112, 112, 0.948);
+        border-left-style: solid;
+      }
+
+      button {
+        width: 300px;
+        height: 50px;
+        margin-bottom: 10px;
+        border: solid;
+        border-radius: 5px;
+        background-color: rgba(147, 145, 145, 0.948);
+        color: white;
+        border: none;
+        font-size: large;
+      }
+      button:hover {
+        opacity: 0.5;
+      }
+
+      button:active {
+        transition: 0.15s;
+        color: rgb(22, 128, 22);
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainBox">
+      <div class="top">
+        <h1 class="result" id="result"></h1>
+      </div>
+      <div class="buttonsSection">
+        <input type="text" placeholder="Add New Sport" id="input"/>
+        <div class="tabGrid">
+          <button class="TabLH" onclick="RemoveSport()">- Remove Sport</button>
+          <button class="TabRH" onclick="AddSport()">Add Sport +</button>
+        </div>
+        <button onclick="nextSport()">Next Sport</button>
+
+        <button>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            >DO NOT PRESS</a
+          >
+        </button>
+      </div>
+    </div>
+  </body>
+  <script>
+ let input =  document.getElementById("input")
+choice = [`a`, `b`, `c`, `d`, `e`, `f` ];
+
+
+
+    function AddSport() {
+      choice.push(input.value);
+      console.log(input.value);
+      document.getElementById("input").value=" "
+      console.log(choice);
+      return false;
+
+    }
+    function RemoveSport() {
+      choice.splice (choice.indexOf(input.value), 1);
+      console.log(input.value);
+      document.getElementById("input").value=" "
+      console.log(choice);
+    }
+
+    function nextSport() {
+      const Random = (choice) => {
+        const randomNumber = Math.floor(Math.random() * choice.length);
+        console.log(choice);
+        console.log(randomNumber);
+        choice.splice((randomNumber) ,1);
+        console.log(choice);
+        return choice[randomNumber];
+      };
+      document.getElementById("result").innerHTML = Random(choice);
+    }
+  </script>
+</html>
