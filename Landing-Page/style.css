@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+
+  box-sizing: border-box;
+  font-family: roboto, Arial, Helvetica, sans-serif;
+}
+
+.container {
+
+  /* align-items: center;*/
+  /* justify-content: center;*/
+  height: 500px;
+  width: 100%;
+}
+
+.layer1 {
+  background-color: #1F2937;
+  height: 535px;
+}
+
+.head {
+  height: 15%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.logobox {
+  width: 50%;
+  color: #F9FAF8;
+  font-size: 24px;
+  font-weight: 600;
+  padding-right: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.links {
+  width: 50%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 50px;
+  padding-left: 110px;
+
+
+}
+
+.hype {
+  font-size: 20px;
+  color: #E5E7EB;
+  transition: opacity 0.15s;
+}
+
+.hype:hover{
+  opacity: 0.8;
+}
+
+
+
+.info {
+  height: 85%;
+  display: flex;
+  flex-direction: row;
+  color: #F9FAF8;
+}
+
+.infoLeft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.infoWordsTitle {
+  height: 120px;
+  width: 350px;
+  font-size: 48px;
+  font-weight: 900;
+  margin-left: 250px;
+  justify-items: end;
+}
+
+.infoWords {
+  color: #E5E7EB;
+  height: 100px;
+  width: 600px;
+  font-size: 25px;
+  margin-left: 250px;
+
+}
+
+.infoButton {
+  width: 170px;
+  height: 50px;
+  margin-left: 250px;
+  background-color: #3882F6;
+  border-radius: 10px;
+  color: #E5E7EB;
+  font-size: 25px;
+  font-weight: 500;
+  border: 1px;
+  transition: opacity 0.15s;
+}
+
+
+.infoButton:hover {
+  opacity: 0.7;
+  transition: color 0.15s, background-color 0.15s;
+}
+
+.infoButton:active {
+  opacity: 1;
+  background-color: white;
+  color: #3882F6;
+}
+
+.infoImg {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+}
+
+.img {
+  background-color: #818285;
+  height: 310px;
+  width: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {}
+
+.layer2 {
+  background-color: white;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.title {
+  height: 40px;
+  font-size: 24px;
+  margin-top: 50px;
+}
+
+
+.cardsBox {
+  height: 100px;
+  width: 100%;
+  margin-top: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.cardsImg {
+  height: 210px;
+  width: 205px;
+  border: 5px solid #3882F6;
+  border-radius: 20px;
+}
+
+.cardText {
+  width: 190px;
+  text-align: center;
+  font-size: 20px;
+  color: #818285;
+
+}
+
+
+
+.layer3 {
+  background-color: #E5E7EB;
+  height: 430px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.quote {
+  font-size: 40px;
+  width: 980px;
+  font-style: italic;
+  color: #1F2937;
+}
+
+.author {
+  color: black;
+  justify-self: right;
+  text-align: right;
+  font-weight: bold;
+}
+
+.layer4 {
+  background-color: white;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signupbox {
+  height: 185px;
+  width: 71%;
+  background-color: #3882F6;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  border-radius: 10px;
+}
+
+.signupboxleft {
+  display: flex;
+  align-items: left;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: left;
+  flex: 2;
+  color: white;
+  margin-left: 150px;
+  padding-right: 0px;
+}
+
+.singupboxtitle {
+  font-weight: 900;
+  font-size: 29px;
+}
+
+.signupboxinfo {
+  font-size: 22.5px;
+  color: #E5E7EB;
+}
+
+.signupboxright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.signupbutton {
+  width: 160px;
+  height: 45px;
+  margin-right: 50px;
+  font-size: 20px;
+  background-color: #1f293700;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+  transition: opacity 0.15s;
+}
+.signupbutton:hover {
+  opacity: 0.7;
+  transition: color 0.15s, background-color 0.15s;
+}
+
+.signupbutton:active {
+  opacity: 1;
+  background-color: white;
+  color: #3882F6;
+}
+
+.layer5 {
+  background-color: #1F2937;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copy {
+  color: white;
+  font-size: 20px;
+}
