@@ -81,7 +81,7 @@ const getSuperHero = () => {
 
       
       image.innerHTML = `<img src='${json.image.url}' height=200 width=270 />`;
-      // image.innerHTML = `<img src='${json.image.url}' />`;
+    
 
       intelligenceGold.innerText = `${json.powerstats.intelligence}`
       strengthGold.innerText = `${json.powerstats.strength}`
@@ -164,6 +164,7 @@ const searchHero = () => {
       console.log(search.value);
     
       image.innerHTML = `<img src='${json.results[0].image.url}' height=200 width=270/>`;
+     
       Name.innerText = `${json.results[0].name}`;
       id.innerText = `${json.results[0].id}`;
       intelligenceGold.innerText = `${json.results[0].powerstats.intelligence}`

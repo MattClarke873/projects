@@ -22,7 +22,8 @@ body{
   background-repeat: no-repeat;
   border-radius: 5px;
   text-align: center;
-  border-color: yellow;
+  border-color: rgba(238, 255, 0, 0.849);
+  box-shadow: 8px 9px 21px 9px rgba(0,0,0,0.63);
   border-width: 10px;
   border-style: solid;
   border-radius: 5px; 
@@ -54,10 +55,15 @@ body {
 #Name{ 
   width: 300px;
   height: 70px;
-  padding-left: 3px;
-  font-size: 180%;
+  padding-left: 15px;
+  font-size: 3vw;
   text-align: left;
   text-justify: inter-word;
+  font-family: 'Roboto', sans-serif;
+  -webkit-text-fill-color: aliceblue; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+ 
   
 }
 
@@ -71,19 +77,16 @@ body {
   justify-content: space-between; 
 }
 
-.image{
+#image{
   display: flex;
   justify-content: center;
   align-content: center ;
   height: 200px;
   margin-bottom: 15px;
+  border-radius: 5px;
+  
 }
 
-.img{
-  height: 200px; 
-  width: 230px;
-  border-radius: 5px;
-}
 
 
 .desc{
@@ -110,7 +113,12 @@ width: 300px;
   height: 30px;
   border-radius:  5px;
   border-style: solid;
+  margin-top: 5px;
+  
+}
 
+.newSuperHero:active{
+  box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.56);
 }
 
 .newSuperHeroSearch{
@@ -145,8 +153,8 @@ width: 300px;
 .meter > span {
   display: block;
   height: 100%;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   background-color: rgb(43, 194, 83); 
@@ -196,13 +204,11 @@ width: 300px;
 .meterGold {
   display: block;
   height: 100%;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
   background-color: gold;
   color: black;  
 }
+
+
 
 .meterNormal{
   display: block;
@@ -233,6 +239,7 @@ width: 300px;
 .bios{
  text-align: left;
  padding-left: 5px;
+ padding-top: 10px;
 }
 
 .job{
@@ -242,6 +249,9 @@ width: 300px;
 #realName{
 height: 25px;
 text-align: center;
+padding-top: 15px;
+font-family: roboto;
+font-size: 20px;
 
 }
 
