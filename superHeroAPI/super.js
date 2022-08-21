@@ -162,8 +162,8 @@ const searchHero = () => {
         CombatGold.setAttribute("class", "meterNormal")  }
       console.log(json);
       console.log(search.value);
-      image.innerHTML = `<img src='${json.results[0].image.url}' />`;
-      // image.innerHTML = `<img src='${json.results[0].image.url}' height=200 width=230/>`;
+    
+      image.innerHTML = `<img src='${json.results[0].image.url}' height=200 width=270/>`;
       Name.innerText = `${json.results[0].name}`;
       id.innerText = `${json.results[0].id}`;
       intelligenceGold.innerText = `${json.results[0].powerstats.intelligence}`
@@ -204,11 +204,20 @@ const searchHero = () => {
 
 
 
+
+
+
 button.onclick = () => getSuperHero();
 
 
 searchButton.onclick = () => searchHero();
 
+
+search.addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    searchButton.onclick()  
+  }
+});
 
 
 $(".meter > span").each(function () {
