@@ -37,6 +37,7 @@ const getSuperHero = () => {
     .then((response) => response.json())
     .then((json) => {
        console.log(json)
+       getStatsHTML(json)
       if (json.powerstats.intelligence == "null" ||json.powerstats.strength == "null" || json.powerstats.speed == "null" || json.powerstats.power == "null" || json.powerstats.combat == "null" ) {
         console.log('skip!!')
         getSuperHero();
@@ -213,6 +214,12 @@ button.onclick = () => getSuperHero();
 
 searchButton.onclick = () => searchHero();
 
+
+const getStatsHTML = (character) => {
+  Object.keys(character.powerstats).map(stat =>{
+   console.log(`<p>${stat} : ${character.powerstats[stat]}</p>`)
+  })
+}
 
 search.addEventListener("keydown", function(event) {
   if (event.key === "Enter") {
